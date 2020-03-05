@@ -14,19 +14,19 @@ def intcheck(question, low=None, high=None):
     # sets up error messages
 
     if low is not None and high is not None:
-            error = "Please enter an integer between {} and {} " \
+            error = u"\u001b[31mPlease enter an integer between {} and {} " \
                     "(inclusive)".format(low, high)
 
     elif low is not None and high is None:
-        error = "Please enter an integer that is more than or " \
+        error = u"\u001b[31mPlease enter an integer that is more than or " \
                 "equal to {}".format(low)
 
     elif low is None and high is not None:
-        error = "Please enter an integer that is less than or " \
+        error = u"\u001b[31mPlease enter an integer that is less than or " \
                 "equal to {}".format(high)
 
     else:
-        error = "Please enter an integer"
+        error = u"\u001b[31mPlease enter an integer"
 
     while True:
 
@@ -52,7 +52,8 @@ def intcheck(question, low=None, high=None):
             continue
 
 # Main routine
-lowest = intcheck("Low Number: ")
-highest = intcheck("High Number: ", lowest + 1)
-rounds = intcheck("Rounds: ", 1)
-guess = intcheck("Guess: ", lowest, highest)
+lowest = intcheck(u"\u001b[34;2mLow Number: ")
+highest = intcheck(u"\u001b[34;2mHigh Number: ", lowest + 1)
+rounds = intcheck(u"\u001b[35;2mRounds: ", 1)
+guess = intcheck(u"\u001b[36;2mGuess: ", lowest, highest)
+print(u"\u001b[0m")
