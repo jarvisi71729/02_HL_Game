@@ -159,4 +159,4 @@ print("Out of your total amount of rounds played, you won ", rounds_won, "rounds
 
 print()
 
-print("Overall, your win percentage across all rounds was {}%".format(win_percentage))
+print("Overall, your win percentage across all rounds was {:.2f}%".format(win_percentage))

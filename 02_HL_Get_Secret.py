@@ -4,7 +4,8 @@
 import random
 
 low = 1
-high = 4
+high = 10
+
 
 for item in range(1, 20):
     secret = random.randint(low, high)
