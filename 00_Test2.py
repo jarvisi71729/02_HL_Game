@@ -51,8 +51,4 @@ cyan = "\e[0;36m"
 
 # colours = ('black', 'red', 'green', 'gold', 'blue', 'pink', 'light_blue', 'grey')
 # colours = ("black", "red", "green", "gold", "blue", "pink", "light_blue", "grey")
-colours = ("black", "green", "cyan")
 
-colour = random.choice(colours)
-
-print("{}sausage".format(colour))

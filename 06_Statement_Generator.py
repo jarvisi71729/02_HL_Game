@@ -22,4 +22,3 @@ well_done = hl_statement("*** Well done! You got it in 3 guesses ***", "*")
 
 print()
 start_round = hl_statement("### Round 1 of 3 ###", "#")
-

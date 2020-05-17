@@ -4,7 +4,6 @@
 # Set up round and win counter
 # update feedback statements
 
-
 secret = 7
 guesses_allowed = 4
 rounds = 3
